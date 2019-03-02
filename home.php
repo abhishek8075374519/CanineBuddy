@@ -14,7 +14,7 @@
     <input type="number" min="1" id="feedct" name="feedcnt">
     <input type="button" id="profile" name=" profile" value="Dispense Food"><br><br>
     <input type="button" id="drnkwtr" name="drnkwtr" value="Dispense Drinking Water"><br><br>
-    <input type="button" id="caudio" name="caudio" value="Play Voice Command" onclick="console.log('ok')"><br><br>
+    <input type="button" id="caudio" name="caudio" value="Play Voice Command" onclick="checkBtn();"><br><br>
 
     <!--This is the door section-->
     
@@ -23,6 +23,10 @@
     <button onclick="doorProperty('false');">Door Close</button></br></br>
     <span id="message" style="width:400px"></span>
     <script>
+        function checkBtn()
+        {
+            console.log('Ok');
+        }
         function doorProperty(type)
         {
             var doorId=1;
